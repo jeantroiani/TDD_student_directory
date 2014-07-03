@@ -108,13 +108,10 @@ require 'directory'
 			end
 			it "exit the program" do
 				expect(self).to receive(:ask_for_input).and_return("9")
-				expect(self).to eq(:exit)
+				expect(self).to receive(:exit)
 				interactive_menu
 			end
 
-			xit "loops the main menu unless you press 9" do
-				expect(loop_the_menu).to receive(interactive_menu)
-			end
-
+			
 		
 	end
