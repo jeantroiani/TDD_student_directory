@@ -75,7 +75,7 @@ require 'directory'
 			 	ask_for_cohort
 			end
 	
-	context "has an interactive menu"
+		context "has an interactive menu"
 	
 			it "has a header" do
 				expect(self).to receive(:puts).with("1.-Add a student\n2.-Show a list of a students\n3.-Save a file\n4.-Load a file\n9.-Exit")

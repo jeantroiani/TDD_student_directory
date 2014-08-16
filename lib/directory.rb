@@ -19,7 +19,7 @@ end
 
 def show_list(list_of_students)
 	list_of_students.each do |student| 
-	puts "#{student[:name]}, #{student[:cohort]}"
+		puts "#{student[:name]}, #{student[:cohort]}"
 	end	
 end
 
@@ -37,7 +37,6 @@ end
 def load_a_file
 	CSV.foreach("../files/directory.csv") do |row|
 		save_a_student(student(row[0],row[1]))		
-
 	end
 
 end
@@ -48,8 +47,8 @@ end
 
 def ask_for_name
 	puts "Input student's name:"
-
 end
+
 def ask_for_cohort
 	puts "Input student's cohort:"
 end
@@ -73,7 +72,6 @@ def interactive_menu
 			exit
 		else
 			puts "try again"
-
 	end
 end
 
@@ -83,3 +81,4 @@ def loop_the_menu
 	end
 end
 
+loop_the_menu
